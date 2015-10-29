@@ -1,0 +1,475 @@
+@font-face{
+    font-family: nokkok;
+    src: url("../fonts/nokkok.ttf");
+}
+
+@font-face{
+    font-family: NokiaSansSemibold;
+    src: url("../fonts/NokiaSansSemibold.ttf");
+}
+
+
+* {
+    font-family:  'Segoe UI Web Regular','Segoe UI Light','Helvetica Neue','Microsoft Yahei UI', 'Microsoft Yahei', Verdana, Simsun, 'Segoe UI',  'Segoe UI Symbol',  'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+}
+
+
+html,body
+{
+    font-size: 16px;
+    color: white;
+}
+
+
+
+@-webkit-keyframes background-color{
+    from{
+        background-color: #4285F4;
+    }
+    to{
+        background-color: #003d60;
+    }
+}
+
+@keyframes background-color{
+    from{
+        background-color: #4285F4;
+    }
+    to{
+        background-color: #003d60;
+    }
+}
+
+
+.background-color-animation{
+    -webkit-animation:background-color 10s infinite alternate;
+    animation:background-color 10s infinite alternate;
+    /*text-align: center;*/
+}
+
+
+@-webkit-keyframes abubble{
+    0%{
+        transform:scale(1);
+        top: 90%;
+    }
+
+    100%{
+        transform:scale(3);
+        top:-40%;
+        opacity: 0.85;
+    }
+}
+@keyframes abubble{
+    0%{
+        transform:scale(1);
+        top: 90%;
+    }
+
+    100%{
+        transform:scale(3);
+        top:-40%;
+        opacity: 0.85;
+    }
+}
+
+.bubble{
+    border-width: .1em;
+    border-radius: 50%;
+    /*width: 1em;*/
+    /*height: 1em;*/
+    border-style: solid;
+    z-index: 2000;
+    /*transform:scale(1);*/
+    position: fixed;
+    background-color: rgba(200,200,200, .3);
+    -webkit-animation: abubble 2s forwards ease-in;
+    animation: abubble 2s forwards ease-in;
+    /*box-shadow: 2px 2px 4px #555;*/
+    text-align: center;
+}
+
+@-webkit-keyframes asquare{
+    0%{
+        /*transform:scale(1);*/
+        top: 90%;
+    }
+
+    100%{
+        /*transform:scale(3);*/
+        top:-40%;
+        /*opacity: 0.85;*/
+    }
+}
+@keyframes asquare{
+    0%{
+        /*transform:scale(1);*/
+        top: 90%;
+    }
+
+    100%{
+        /*transform:scale(3);*/
+        top:-40%;
+        /*opacity: 0.85;*/
+    }
+}
+
+.square{
+    border-width: .07em;
+    /*border-radius: 50%;*/
+    /*width: 1em;*/
+    /*height: 1em;*/
+    border-style: solid;
+    z-index: 2000;
+    /*transform:scale(1);*/
+    position: fixed;
+    /*background-color: rgba(200,200,200, .3);*/
+    -webkit-animation: asquare 1.5s forwards ease-in;
+    animation: asquare 1.5s forwards ease-in;
+    /*box-shadow: 2px 2px 4px #555;*/
+    /*text-align: center;*/
+    opacity: .6;
+}
+
+#keyword{
+    font-size: 4em;
+    font-weight: bold;
+    font-family: nokkok;
+}
+
+#commingsoon{
+    font-size: 2em;
+    opacity: 0;
+    font-family: NokiaSansSemibold;
+}
+
+#highlight img{
+    position: fixed;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    left: 25%;
+    opacity: .25;
+}
+
+#logo{
+    z-index: 1000;
+    text-align: center;
+    top:25%;
+    position: absolute;
+    width: 100%;
+}
+#logo img{
+    margin-left: -15px;
+}
+
+video{
+    /*width: 100%;*/
+    height: 100%;
+    opacity: 0;
+}
+.videomaskr{
+    float: right;
+    margin-right: 0;
+    right: 0;
+    width: 30%;
+    z-index: 1000;
+}
+
+
+
+.videomask{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    float: right;
+    margin-right: 0;
+    right: 0;
+    background-image: linear-gradient(to right, rgba(236, 236, 236, 0),rgba(236, 236, 236, 0.8),rgba(236, 236, 236, 1), rgba(236, 236, 236, 1));
+    z-index: 1000;
+}
+
+
+
+.title{
+    color: white;
+    margin-right: 20%;
+    padding-right: 3em;
+    display: block;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 25%;
+    font-family: NokiaSansSemibold;
+}
+.maintitle{
+    font-size: 2em;
+    font-family: nokkok;
+}
+.subtitle{
+    font-family: NokiaSansSemibold;
+    margin-top: 1em;
+}
+.detail{
+    margin-top: 5%;
+    color: rgba(127,127,127,1);
+    font-size: 1.5em;
+    margin-right: 30%;
+    font-weight: bold;
+    padding-left: 1em;
+    font-family: NokiaSansSemibold;
+
+}
+.detail ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.detail li{
+    padding-left: 0;
+}
+.google:before{
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/google.jpg");
+    position: absolute;
+    content: " ";
+}
+.detail img{
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    margin-right: .5em;
+    margin-top: 5px;
+    /*padding-top:auto;*/
+}
+
+.bgc1{
+    background-color: rgba(35, 31, 32, 1);
+}
+.bgc2{
+    background-color: rgba(200, 68, 0, 1);
+}
+.bgc3{
+    background-color: rgba(225, 161, 1, 1);
+}
+.bgc4{
+    background-color: rgba(220, 52, 124, 1);
+}
+.bgc5{
+    background-color: rgba(0, 166, 81, 1);
+}
+.bgc6{
+    background-color: rgba(53, 99, 175, 1);
+}
+.bgc7{
+    background-color: rgba(240, 0, 122, 1);
+}
+
+.rightmask{
+    height: 100%;
+    width: 50%;
+    float: right;
+    margin-right: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.windowsphone{
+    margin-top: 5%;
+    margin-left: 7%;
+    width: 20%;
+}
+
+.post{
+    /*margin-top: 10%;*/
+    margin-left: 5%;
+    height: 100%;
+    /*position: absolute;*/
+    /*display: inline-block;*/
+}
+
+.website {
+    text-decoration: none;
+    color: white;
+    transition-property: color;
+    transition-duration: .4s;
+}
+
+.website:hover{
+    color: #00a7e1;
+}
+
+.play{
+    display: none;
+    /*color: #0f93f7;*/
+    text-decoration: none;
+    height: 1.5em;
+    width: auto;
+    padding: .3em 1em ;
+    font-family: nokkok;
+    border-style: solid;
+    border-width: 2px;
+    /*border-color: #0f93f7;*/
+    transition-property:background color border-color;
+    transition-duration:.7s;
+    border-radius: 10%;
+    margin-top: 3em;
+    margin-left: 5px;
+}
+
+.play:hover{
+    /*background: #34a5f8;*/
+    color: white;
+    /*border-color: #34a5f8;*/
+}
+
+.play-1{
+    color:rgba(35, 31, 32, 1);
+}
+.play-1:hover{
+    background-color: rgba(35, 31, 32, 1);
+    border-color: rgba(35, 31, 32, 1);
+}
+
+.play-2{
+    color:rgba(200, 68, 0, 1);
+}
+.play-2:hover{
+    background-color: rgba(200, 68, 0, 1);
+    border-color: rgba(200, 68, 0, 1);
+}
+
+.play-3{
+    color:rgba(225, 161, 1, 1);
+}
+.play-3:hover{
+    background-color: rgba(225, 161, 1, 1);
+    border-color: rgba(225, 161, 1, 1);
+}
+
+.play-4{
+    color:rgba(220, 52, 124, 1);
+}
+.play-4:hover{
+    background-color: rgba(220, 52, 124, 1);
+    border-color: rgba(220, 52, 124, 1);
+}
+
+.play-5{
+    color:rgba(0, 166, 81, 1);
+}
+.play-5:hover{
+    background-color: rgba(0, 166, 81, 1);
+    border-color: rgba(0, 166, 81, 1);
+}
+
+.play-6{
+    color:rgba(53, 99, 175, 1);
+}
+.play-6:hover{
+    background-color: rgba(53, 99, 175, 1);
+    border-color: rgba(53, 99, 175, 1);
+}
+
+.play-7{
+    color:rgba(240, 0, 122, 1);
+}
+.play-7:hover{
+    background-color: rgba(240, 0, 122, 1);
+    border-color: rgba(240, 0, 122, 1);
+}
+
+
+
+@media (max-width: 1300px){
+    html,body
+    {
+        font-size: 12px;
+        color: white;
+    }
+    
+}
+
+@media (max-width: 960px){
+    html,body
+    {
+        font-size: 10px;
+        color: white;
+    }
+}
+
+/*@media (max-width: 800px){
+    html,body
+    {
+        font-size: 8px;
+        color: white;
+    }
+    video{
+        display: none;
+    }
+}*/
+
+@media (max-width: 800px), (orientation:portrait){
+    html,body
+    {
+        font-size: 10px;
+        color: white;
+    }
+    video{
+        display: none;
+    }
+    .videomask{
+        position: static;
+        height: 100%;
+        width: 100%;
+        float: left;
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 20%;
+        /*margin-right: 0;*/
+        right: 0;
+        /*background-image:linear-gradient(to right, red, #f06d06);*/
+        background-image: none;
+        z-index: 1000;
+        /*padding-top: 15%;*/
+        /*text-align: center;*/
+    }
+    .rightmask{
+        position: static;
+        height: 100%;
+        width: 100%;
+        float: left;
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 20%;
+        /*margin-right: 0;*/
+        right: 0;
+        /*background-image:linear-gradient(to right, red, #f06d06);*/
+        z-index: 1000;
+    }
+    .windowsphone{
+        display: none;
+    }
+    .title{
+        /*text-align: center;*/
+        margin-top: 10%;
+    }
+    .play{
+        display: inline-block;
+    }
+}
+@media (max-width: 600px){
+    html,body
+    {
+        font-size: 8px;
+        color: white;
+    }
+}
+@media (max-width: 400px){
+    html,body
+    {
+        font-size: 6px;
+        color: white;
+    }
+}

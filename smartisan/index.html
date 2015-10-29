@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/jquery.fullPage.css">
+        <link rel="stylesheet" href="./css/smartisan.css">
+        <script src="./js/jquery-2.1.0.min.js"></script>
+        <script src="./js/jquery.fullPage.js"></script>
+        <script>
+        	$(document).ready(function()
+        	{
+        		$('#fullpage').fullpage({
+					anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage'],
+					sectionsColor: ['#202020','#202020','#fff','#C63D0F', '#1BBC9B'],
+					navigation: true,
+					navigationPosition: 'right',
+					navigationTooltips: ['First page', 'Second page', 'Third page','Forth page','Last page'],
+					afterLoad:function(anchorlink,index){
+						// if(index ==2){
+						// 	$('#section2_1').animate({top:'15%',opacity:1.0},1500);
+						// }
+						if(index !=2){
+							$('#section2_1').css({'top':'25%'})
+						}
+						if(index !=3){
+							$('#section3_1').css({'top':'25%'})
+						}
+					},
+					onLeave:function(index,nextindex){
+						if(nextindex == 2){
+							$('#section2_1').animate({top:'15%',opacity:1.0},1500);
+						}
+						if(nextindex == 3){
+							$('#section3_1').animate({top:'15%',opacity:1.0},1500);
+						}
+					}
+
+				});
+        	})
+        </script>
+    </head>
+    <body>
+    	<div id="fullpage">
+    		<div id="section1" class="section">
+    			<h1>Smartisan T1</h1>
+    		</div>
+    		<div id="section2" class="section">
+    			<div id='section2_1' class="left ">
+    				<img id="img01" src="./img/01_phone.png" alt="Smartisan T1">
+    			</div>
+				<div id ='section2_2' class="up">
+					<h2>世界级的工业设计</h2>
+					<p>
+						接近完美对称的机身设计，覆盖面高达83.3%的康宁第三代大猩猩玻璃机身，坚固无比的聚碳酸酯+玻璃纤维混合中框，人性化和体贴程度前所未有的左右手操作习惯全支持...这一切，全都来自业界传奇的美国工业设计公司 Ammunition。
+					</p>
+					<a href="#">进一步了解 Smartisan T1 设计</a>
+				</div>
+    		</div>
+    		<div id="section3" class="section">
+    			<div id="section3_1" class="left">
+    				<img src="./img/02_phone.png" alt="Smartisan T1" id="img02">
+    			</div>
+    			<div id="section3_2" class="up">
+    				<h2>Smartisan OS</h2>
+    				<h2>七年一遇的美观</h2>
+    				<p>
+    					将传统的只能手机桌面的执行效率提高至史无前例的程度，将美学上先天不良的安卓系统打磨至脱胎换骨的程度，将软硬件完美结合才能打造完美用户体验的经典理念贯彻至示范级的程度。
+    					没有“革命”、没有“颠覆”、没有“重新定义”，但150多项足以令人深刻体会什么叫“量变到质变”的新特性，让你一经使用，永无回头之路。
+    				</p>
+    				<a href="#">进一步了解 Smartisan OS 详情</a>
+    			</div>
+    		</div>
+    		<div id="section4" class="section"></div>
+    		<div id="section5" class="section"></div>
+    	</div>
+    </body>
+</html>

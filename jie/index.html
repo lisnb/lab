@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/jie.css">
+    </head>
+    <body>
+        <div class="container">
+            <ul id="scene" class="scene">
+                <li class="layer" data-depth="0.20" z-index="10">
+                    <div class="homepage">
+                    </div>
+                </li>
+                <li class="layer" data-depth="1.00" z-index="100">
+                    <div class="board">
+                        <div id="homeitem-1" class="homeitem">
+                            <img src="./images/home-awcoll.jpg" alt="">
+                        </div>
+                        <div id="homeitem-2" class="homeitem">
+                             <img src="./images/home-designer-detail.jpg" alt="">
+                        </div>
+                        <div id="homeitem-3" class="homeitem">
+                            <img src="./images/home-lookbook.jpg" alt="">
+                        </div>
+                        <div id="homeitem-4" class="homeitem">
+                            <img src="./images/home-sscoll.jpg" alt="">
+                        </div>
+                        <div id="homeitem-5" class="homeitem">
+                            <img src="./images/home-style.jpg" alt="">
+                        </div>
+                        <div class="homeitem"></div>
+                        <div class="homeitem"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <script src="./scripts/jquery.js"></script>
+        <script src="./scripts/jquery.parallax.js"></script>
+        <script>
+            $("#scene").parallax({
+                scalarX: 25,
+                scalarY: 25
+            });
+        </script>
+    </body>
+</html>

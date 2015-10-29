@@ -1,0 +1,63 @@
+/*#section1{
+	background-color: #202020;
+}*/
+html,body
+{
+	font-size: 16px;
+}
+h1{
+	text-align: center;
+	color: white;
+	font-size: 7em;
+	font-family: 'Helvetica Neue','Microsoft Yahei UI', 'Microsoft Yahei', Verdana, Simsun, 'Segoe UI', 'Segoe UI Web Regular', 'Segoe UI Symbol',  'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+}
+h2
+{
+	font-family: 'Microsoft Yahei UI', 'Microsoft Yahei','Segoe UI', 'Segoe UI Web Regular', 'Segoe UI Symbol',  'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+	font-size: 3.5em;
+	margin-left: -.1em;
+	font-weight: normal;
+}
+#section2_2,#section3_2{
+	/*padding-top: 12em;*/
+	/*color: #ddd;*/
+	padding-right: 5%;
+	padding-left: 55%;
+	font-family: 'Microsoft Yahei UI', 'Microsoft Yahei','Segoe UI', 'Segoe UI Web Regular', 'Segoe UI Symbol',  'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+	/*position: absolute;*/
+}
+p{
+	line-height: 2em;
+	margin-bottom: 2em;
+}
+#section2_2{
+	color: #bbb;
+}
+
+#section3_2{
+	color: #222;
+}
+a{
+	text-decoration: none;
+	color: #336699;
+	font-size: 1.5em; 
+}
+.up{
+	z-index: 100;
+}
+
+#section2_1,#section3_1{
+	overflow: hidden;
+	position: absolute;
+	top:200px;
+	left:4%;
+	opacity: .6;
+}
+
+.half{
+	box-sizing:border-box;
+	width: 50%;
+}
+.left{
+	float: left;
+}

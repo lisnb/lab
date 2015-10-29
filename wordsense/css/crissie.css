@@ -1,0 +1,414 @@
+.royalblue{
+    background: rgb(66,133,244);
+}
+
+html,body
+{
+    font-size: 16px;
+    color: white;
+}
+
+* {
+    font-family: 'Helvetica Neue','Microsoft Yahei UI', 'Microsoft Yahei', Verdana, Simsun, 'Segoe UI', 'Segoe UI Web Regular', 'Segoe UI Symbol',  'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    /*font-size: 5em;*/
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition-property: color;
+    transition-duration: .4s;
+}
+
+a:hover{
+    color: #00a7e1;
+}
+
+img{
+    transition-property: opacity;
+    transition-duration: .45s;
+    opacity: .76;
+}
+
+img:hover{
+    opacity: 1;
+}
+
+#avatar{
+    display: inline-block;
+    width: 230px;
+    height: 230px;
+    border: solid white .4em;
+    border-radius: 50%;
+    background: no-repeat url('../img/lisnb.png') left top;
+    margin-left: 20%
+}
+
+.line {
+    border-right: solid white .2em;
+    width: .2em;
+    height: 14em;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 8%;
+}
+
+.intro{
+    display: inline-block;
+    margin-top: 55px;
+    /*height: 250px;*/
+    position: absolute;
+}
+
+.footnote {
+    font-size: 1em;
+    /*display: inline-block;*/
+    color: #bbb;
+    margin-left: .5em;
+}
+
+.blockspan{
+    display: block;
+    margin-bottom: 1em;
+}
+
+.lab{
+    margin-top: 1em;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.full{
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.nku, .cas{
+    color: black;
+}
+
+.ulogo{
+    width: 250px;
+    height: 250px;
+    margin-top: 18%;
+}
+.nku img{
+    float: right;
+    margin-right: 30%;
+}
+.nkutrophy{
+    /*margin-left: 40%;*/
+    color:black;
+    float: right;
+    margin-right: 30%;
+    text-align: right;
+
+}
+.nkutrophy span{
+    /*margin-left: 40%;*/
+    font-size: 2em;
+    margin-top: 2.1em;
+}
+
+.nkutrophy ul{
+    list-style: none;
+}
+.cas img{
+    margin-left: 30%;
+}
+.castrophy{
+    margin-left: 30%;
+    color: black;
+}
+.castrophy span{
+    font-size: 2em;
+    margin-top: 2em;
+}
+.castrophy ul{
+    margin-left: -2em;
+    list-style: none;
+}
+
+#prac{
+    color: white;
+}
+
+.fa-20{
+    font-size: 20em;
+}
+
+.ft-20{
+    font-size: 20em;
+}
+
+.ft-10{
+    font-size: 10em;
+}
+
+.ft-8{
+    font-size: 8em;
+}
+
+.ft-5{
+    font-size: 5em;
+}
+.ft-4{
+    font-size: 4em;
+}
+.ft-3{
+    font-size: 3em;
+}
+.ft-2{
+    font-size: 2em;
+}
+.ft-1{
+    font-size: 1.5em;
+}
+
+#practice-intro{
+    text-align: center;
+}
+
+.prac-title{
+    font-size: 4em;
+}
+.prac-subtitle{
+    font-size: 2em;
+    display: block;
+    margin-bottom: 1em;
+}
+.prac-tech-title{
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 1em;
+}
+.prac-desc{
+    width: 80%;
+}
+.prac-logo{
+    margin-top: .67em;
+    text-align: center; 
+}
+.prac-logo-word{
+    font-size: 3.5em;
+    float: right;
+    margin-right: 15%;
+    text-align: right;
+    /*padding-top: 15%;*/
+    margin-top: .67em;
+    width: 60%;
+}
+.prac-note:before{
+    content: "\f02b";
+    margin-right: 1em;
+    color: red;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+}
+.github{
+    padding-left: .3em;
+    padding-right: .3em;
+    color:#00A7E1;
+}
+.github:before{
+    content:"\f09b";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    font-size: 2em;
+}
+.prac-repo:before{
+    content: "\f126";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    font-size: 1.5em;
+    padding-right: .5em;
+}
+.prac-repo{
+    padding-left: 1em;
+    padding-right: .5em;
+}
+.prac-note{
+    display: block;
+    margin-top: .67em;
+}
+
+.prac-nav:before{
+    content: "\f064";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    font-size: 1.5em;
+    padding-right: .5em;
+}
+
+.fd-1{
+    opacity: .9;
+}
+
+.fd-2{
+    opacity: .8;
+}
+
+.fd-3{
+    opacity: .7;
+}
+
+
+.fd-4{
+    opacity: .6;
+}
+
+.fd-5{
+    opacity: .5;
+}
+
+.skill-title{
+    display: block;
+    font-size: 2em;
+}
+
+.skill-item{
+    /*margin-left: 3em;*/
+    /*text-align: center;*/
+}
+.skill-item li{
+    display: inline-block;
+}
+
+.skill-item li:before{
+    content: "\f046";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    padding-left: 1em;
+    padding-right: .5em;
+}
+
+.skills{
+    /*text-align: center;*/
+    /*height: 100%;*/
+    margin-left: 15%;
+    margin-right:15%;
+}
+
+.interns{
+    margin-left: 15%;
+    margin-right:15%;
+}
+.intern-item{
+    margin-bottom: 2em;
+}
+.intern-title{
+    font-size: 2em;
+
+}
+.intern-date{
+    font-size: 1.5em;
+    margin-left: 1.5em;
+}
+.intern-desc{
+    font-size: 1em;
+    display: block;
+    margin-top: 1em;
+}
+
+.trophys{
+    margin-left: 15%;
+    margin-right:15%;
+}
+
+.trophy-item{
+    margin-bottom: 2em;
+}
+.trophy-title{
+    font-size: 2em;
+    display: block;
+    margin-bottom: .8em;
+}
+.trophy-title:before{
+    content: "\f091";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    font-size: 2em;
+    margin-right: .5em;
+}
+.trophy-desc{
+    /*margin-top: 1.5em;*/
+    margin-left: 6em;
+}
+.papers{
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+.paper-item{
+    margin-bottom: 2.5em;
+}
+.paper-title{
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 1em;
+}
+.paper-title:before{
+    content: "\f1c1";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    font-size: 1.5em;
+    margin-right: .5em;
+}
+.paper-nav{
+    /*display: block;*/
+    margin-left: 2.5em;
+}
+
+.spec{
+    margin-bottom: 2em;
+}
+.spec:before{
+    content: "\f007";
+    font-size: 2em;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    margin-right: .5em;
+}
+
+.contacts{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.contact-item{
+    font-size: 4em;
+    margin-left: 1.5em;
+}
