@@ -2,7 +2,7 @@
 * @Author: LiSnB
 * @Date:   2015-06-12 09:38:42
 * @Last Modified by:   LiSnB
-* @Last Modified time: 2015-06-12 21:20:36
+* @Last Modified time: 2015-10-30 15:37:51
 */
 
 html{
@@ -20,10 +20,14 @@ body{
 #notepad{
     padding-top: 10px;
     padding-left: 5px;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
 }
 
 #code{
     display: inline;
+    overflow: hidden;
 }
 
 @keyframes blink{
@@ -77,9 +81,9 @@ body{
 }
 
 #logo{
-    position: fixed;
+    position: absolute;
     top: 20%;
-    right: 20%;
+    right: 10%;
 
     -webkit-animation: rotate 8s linear infinite ;
          -o-animation: rotate 8s linear infinite ;
