@@ -2,7 +2,7 @@
 * @Author: LiSnB
 * @Date:   2015-06-12 09:38:42
 * @Last Modified by:   LiSnB
-* @Last Modified time: 2015-10-30 15:37:51
+* @Last Modified time: 2015-10-30 16:27:13
 */
 
 html{
@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    font-family: Monaco;
+    font-family: Monaco, Consolas;
     margin: 0;
     color: #45ffea;
     background-color: black;

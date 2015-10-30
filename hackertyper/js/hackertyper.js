@@ -2,7 +2,7 @@
 * @Author: LiSnB
 * @Date:   2015-06-12 20:27:45
 * @Last Modified by:   LiSnB
-* @Last Modified time: 2015-06-12 21:19:05
+* @Last Modified time: 2015-10-30 16:25:27
 */
 
 $(document).ready(function  () {
@@ -22,14 +22,21 @@ var Hackertyper = {
             Hackertyper.code = data;
         });
     },
+    adjustnotepad:function(){
+        if($(document).height>=$("#notepad").height())
+            $("#notepad").css({"top":0});
+        else
+            $("#notepad").css({"bottom":0});
+    },
     update: function(snippet){
         $("#code").html(snippet);
         window.scrollBy(0,50);
+        // Hackertyper.adjustnotepad();
         return false;
     },
 
     coding: function  (key) {
-        console.log(key.keyCode);
+        // console.log(key.keyCode);
         if(Hackertyper.code){
             if(key.preventDefault && key.keyCode != 122 && key.keyCode != 116) {
                 key.preventDefault();
