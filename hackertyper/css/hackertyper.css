@@ -19,7 +19,6 @@ body{
     font-family: Monaco;
     color: #269b09;
     background-color: #0a0a0a;
-    overflow: hidden;
 }
 
 #notepad{
@@ -29,6 +28,7 @@ body{
     position: absolute;
     bottom: 0;
     top:0;
+    overflow:hidden;
 }
 
 #code{
