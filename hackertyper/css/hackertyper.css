@@ -2,32 +2,39 @@
 * @Author: LiSnB
 * @Date:   2015-06-12 09:38:42
 * @Last Modified by:   LiSnB
-* @Last Modified time: 2015-10-30 16:27:13
+* @Last Modified time: 2016-01-26 20:10:07
 */
+*{
+    box-sizing:border-box;
+}
 
-html{
+html, body{
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    font-family: Monaco, Consolas;
-    margin: 0;
-    color: #45ffea;
-    background-color: black;
+    font-family: Monaco;
+    color: #269b09;
+    background-color: #0a0a0a;
+    overflow: hidden;
 }
 
 #notepad{
     padding-top: 10px;
     padding-left: 5px;
+    width: 100%;
     position: absolute;
     bottom: 0;
-    overflow: hidden;
+    top:0;
 }
 
 #code{
-    display: inline;
-    overflow: hidden;
+    box-sizing:border-box;
+    /*overflow: hidden;*/
+    width: 100%;
 }
 
 @keyframes blink{
@@ -73,19 +80,19 @@ body{
 }
 
 .cursor{
-    -webkit-animation: blink .5s infinite alternate;
-         -o-animation: blink .5s infinite alternate;
-            animation: blink .5s infinite alternate;
+    -webkit-animation: blink .5s   infinite alternate ;
+         -o-animation: blink .5s   infinite alternate ;
+            animation: blink .5s   infinite alternate ;
 
-    border-left: solid 2px #45ffea;
+    border-left: solid 2px #269b09;
 }
 
 #logo{
-    position: absolute;
+    position: fixed;
     top: 20%;
-    right: 10%;
+    right: 20%;
 
-    -webkit-animation: rotate 8s linear infinite ;
-         -o-animation: rotate 8s linear infinite ;
-            animation: rotate 8s linear infinite ;
+    -webkit-animation: rotate 8s linear infinite  ;
+         -o-animation: rotate 8s linear infinite  ;
+            animation: rotate 8s linear infinite  ;
 }
