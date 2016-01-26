@@ -33,7 +33,7 @@ var Hackertyper = {
         // window.scrollBy(0, 50);
         // var scrollHeight = $("#code").scrollTop();//document.getElementById("code").scrollHeight
         // console.log(scrollHeight);
-        $("body").scrollTop(code.scrollHeight);
+        $("#notepad").scrollTop(code.scrollHeight);
         // return false;
     },
 
